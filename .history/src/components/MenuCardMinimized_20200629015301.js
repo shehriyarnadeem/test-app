@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, View, Image, TouchableHighlight } from "react-native";
 import { Card, Text } from "react-native-elements";
 import UserIcon from "../../assets/icons/icons-13.png";
-import BackIcon from "../../assets/icons/backIcon.png";
 import ShareActive from "../../assets/icons/ShareActive.png";
 import ShareInActive from "../../assets/icons/ShareInActive.png";
 import PollActive from "../../assets/icons/PollActive.png";
@@ -13,11 +12,6 @@ const MenuCardMinimized = ({ showChecboxHandler, activeScreen, setScreen }) => {
   const handleCheckbox = (type) => {
     showChecboxHandler(type);
     setScreen(type);
-  };
-
-  const clearCheckbox = () => {
-    showChecboxHandler("");
-    setScreen("");
   };
   return (
     <Card
